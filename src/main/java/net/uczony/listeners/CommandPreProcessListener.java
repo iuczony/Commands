@@ -9,7 +9,7 @@ import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 public class CommandPreProcessListener implements Listener
 {
     public String colors(final String str) {
-        return str.replace(">>", "U+00BB"));
+        return str.replace(">>", "U+00BB");
     }
 
     @EventHandler
