@@ -8,8 +8,9 @@ import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 
 public class CommandPreProcessListener implements Listener
 {
-    public String colors(final String str) {
-        return str.replace(">>", "U+00BB");
+    public static String fixColor(final String t) {
+        return t.replace(">>", "\u00BB");
+
     }
 
     @EventHandler
@@ -18,7 +19,7 @@ public class CommandPreProcessListener implements Listener
             final String[] cmd = e.getMessage().split(" ");
             if (cmd[0].equals("/" + s)) {
                 for (final String ss : CommandsPlugin.getInst().getConfig().getStringList("commands." + s)) {
-                    e.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', ss));
+                    e.getPlayer().sendMessage(CommandPreProcessListener.fixColor(ChatColor.translateAlternateColorCodes('&', ss)));
                 }
                 e.setCancelled(true);
             }
