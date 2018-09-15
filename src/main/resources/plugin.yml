@@ -1,0 +1,4 @@
+name: Commands
+author: uczony
+main: net.uczony.CommandsPlugin
+version: 0.1

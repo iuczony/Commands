@@ -1,0 +1,9 @@
+#####################################
+# Komendy mozesz dodawac ile chcesz #
+#####################################
+
+commands:
+  help1:
+  - 'Wiadomosc 1'
+  help2:
+  - 'Wiadomosc 2'
