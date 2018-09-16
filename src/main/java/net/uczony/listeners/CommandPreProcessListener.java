@@ -14,7 +14,7 @@ public class CommandPreProcessListener implements Listener
     }
 
     @EventHandler
-    public void onCommand(final PlayerCommandPreprocessEvent e) {
+    public void onCommand(PlayerCommandPreprocessEvent e) {
         for (final String s : CommandsPlugin.getInst().getConfig().getConfigurationSection("commands").getKeys(false)) {
             final String[] cmd = e.getMessage().split(" ");
             if (cmd[0].equals("/" + s)) {
