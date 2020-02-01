@@ -1,9 +1,7 @@
-#####################################
-# Komendy mozesz dodawac ile chcesz #
-#####################################
+# Exapmle:
 
 commands:
-  help1:
-  - 'Wiadomosc 1'
-  help2:
-  - 'Wiadomosc 2'
+  help:
+  - 'Help command'
+  hello:
+  - 'Hello'

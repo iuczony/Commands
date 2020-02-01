@@ -8,7 +8,6 @@
     <artifactId>Commands</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <repositories>
         <repository>
             <id>panda-repository</id>
@@ -23,5 +22,4 @@
             <version>1.8.8-R0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
 </project>
